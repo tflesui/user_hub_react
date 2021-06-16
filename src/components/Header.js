@@ -1,7 +1,14 @@
+import { select } from 'async';
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
+import {
+    storeCurrentUser,
+    clearCurrentUser
+} from '../auth';
+
 import './Header.css';
+
 
 const Header = ({
     currentUser,
@@ -26,11 +33,13 @@ const Header = ({
     }
 
     const handleUserLogin = () => {
+        storeCurrentUser(selectedUser);
         setCurrentUser(selectedUser);
     }
 
     const handleUserLogout = () => {
         setSelectedUser(userList[0]);
+        clearCurrentUser();
         setCurrentUser(null);
     }
 

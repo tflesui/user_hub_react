@@ -9,7 +9,7 @@ header {
   font-family: 'Balsamic Sans', sans-serif;
   font-size: 16px;
 
-  background: lightseagreen;
+  background: rgb(47, 153, 74);
   padding: 1em;
 }
 
@@ -35,13 +35,14 @@ header .user-select a {
   color: #333333;
   font-weight: bold;
   font-size: 1em;
-  color: #8ff;
+  color: rgb(143, 240, 123);
   background: #333333;
   margin-right: .5em;
 }
 
 header .user-select a.current {
-  background: #8ff;
+  background:rgb(143, 240, 123);
+
   color: #333333;
 }
 
