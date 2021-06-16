@@ -9,7 +9,7 @@ header {
   font-family: 'Balsamic Sans', sans-serif;
   font-size: 16px;
 
-  background: rgb(43, 165, 104);
+  background: lightseagreen;
   padding: 1em;
 }
 
@@ -29,6 +29,22 @@ header .user-select select {
   width: 16em;
   margin-right: .5em;
 }
+
+header .user-select a {
+  padding: 8px 12px;
+  color: #333333;
+  font-weight: bold;
+  font-size: 1em;
+  color: #8ff;
+  background: #333333;
+  margin-right: .5em;
+}
+
+header .user-select a.current {
+  background: #8ff;
+  color: #333333;
+}
+
 
 header .user-select select,
 header .user-select button {
